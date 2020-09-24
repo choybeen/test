@@ -6,22 +6,17 @@ class Timer
 {
 public:
 	Timer()
-		: t1(res::zero())
-		, t2(res::zero())
-	{
+		: t1(res::zero()), t2(res::zero())	{
 		tic();
 	}
 
-	~Timer()
-	{}
+	~Timer()	{}
 
-	void tic()
-	{
+	void tic()	{
 		t1 = clock::now();
 	}
 
-	void toc(const char* str)
-	{
+	void toc(const char* str)	{
 		t2 = clock::now();
 		std::cout << str << " time: "
 			<< std::chrono::duration_cast<res>(t2 - t1).count() / 1e3 << "ms." << std::endl;

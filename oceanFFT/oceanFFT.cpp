@@ -22,12 +22,12 @@
     It also serves as an example of how to generate multiple vertex
     buffer streams from CUDA and render them using GLSL shaders.
 */
-
 #if defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64)
 #  define WINDOWS_LEAN_AND_MEAN
 #  define NOMINMAX
 #  include <windows.h>
 #endif
+
 
 // includes
 #include <stdlib.h>
